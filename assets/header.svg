@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Header banner">
+  <title>Header banner</title>
+  <defs>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="0.45" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#e0e7ff"/>
+      <animateTransform attributeName="gradientTransform" type="rotate"
+        from="0 0.5 0.5" to="360 0.5 0.5" dur="24s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f81f7"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <linearGradient id="blendBottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="1"/>
+    </linearGradient>
+
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="48"/>
+    </filter>
+  </defs>
+
+  <!-- 底色 -->
+  <rect width="1200" height="300" fill="url(#aurora)"/>
+
+  <!-- 缓慢漂移的光斑 -->
+  <g filter="url(#soft)">
+    <circle cx="200" cy="70" r="130" fill="#93c5fd" opacity="0.55">
+      <animate attributeName="cx" values="200;260;200" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="70;110;70" dur="19s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1010" cy="230" r="150" fill="#c4b5fd" opacity="0.5">
+      <animate attributeName="cx" values="1010;940;1010" dur="21s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- 底部与页面背景融合（画在文字之前，否则会把小字冲淡） -->
+  <rect y="180" width="1200" height="120" fill="url(#blendBottom)"/>
+
+  <!-- 文案：淡入 + 轻微上浮 -->
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.1s" dur="0.9s" fill="freeze"/>
+    <text x="96" y="118" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, 'PingFang SC', sans-serif"
+      font-size="19" letter-spacing="4" fill="#4b5563">HELLO, I'M</text>
+  </g>
+
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.35s" dur="1s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="0 14" to="0 0"
+      begin="0.35s" dur="1s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+    <text x="92" y="196" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', ui-sans-serif, sans-serif"
+      font-size="72" font-weight="800" letter-spacing="1" fill="#0b1220">莫子闲</text>
+    <text x="332" y="196" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, sans-serif"
+      font-size="26" font-weight="600" letter-spacing="1.5" fill="#64748b">MOZIXIAN</text>
+  </g>
+
+  <!-- 渐变下划线：从 0 生长 -->
+  <rect x="96" y="216" width="0" height="6" rx="3" fill="url(#accent)">
+    <animate attributeName="width" from="0" to="200" begin="1s" dur="0.9s" fill="freeze"
+      calcMode="spline" keySplines="0.16 1 0.3 1"/>
+  </rect>
+
+  <g opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="1s" fill="freeze"/>
+    <text x="96" y="258" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', ui-sans-serif, sans-serif"
+      font-size="22" letter-spacing="2" fill="#374151">莫在子时闲无事</text>
+  </g>
+</svg>
