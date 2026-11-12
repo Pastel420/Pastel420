@@ -1,0 +1,30 @@
+[
+  {
+    "type": "rainbow",
+    "fileName": "rainbow-day.svg",
+    "backgroundColor": "#ffffff",
+    "foregroundColor": "#24292f",
+    "strongColor": "#2f81f7",
+    "weakColor": "#d0d7de",
+    "radarColor": "#2f81f7",
+    "growingAnimation": true,
+    "saturation": "62%",
+    "contribLightness": ["94%", "82%", "70%", "56%", "44%"],
+    "duration": "10s",
+    "hueRatio": -7
+  },
+  {
+    "type": "rainbow",
+    "fileName": "rainbow-night.svg",
+    "backgroundColor": "#0d1117",
+    "foregroundColor": "#e6edf3",
+    "strongColor": "#58a6ff",
+    "weakColor": "#30363d",
+    "radarColor": "#58a6ff",
+    "growingAnimation": true,
+    "saturation": "62%",
+    "contribLightness": ["18%", "34%", "48%", "58%", "68%"],
+    "duration": "10s",
+    "hueRatio": -7
+  }
+]
