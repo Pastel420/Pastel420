@@ -1,11 +1,7 @@
 <div align="center">
 
-<!-- 头图：随 GitHub 主题自动切换，浅色/深色各一张 -->
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./assets/header-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/header.svg" />
-  <img src="./assets/header.svg" alt="莫子闲 MoZiXian" width="100%" />
-</picture>
+<!-- 固定深色头图：不依赖系统的深浅色声明，两种 GitHub 外观下都是深色 -->
+<img src="./assets/header-dark.svg" alt="莫子闲 MoZiXian" width="100%" />
 
 </div>
 
@@ -17,11 +13,7 @@
 
 <div align="center">
 
-<!-- 3D 彩虹贡献图：由 .github/workflows/profile-3d.yml 每天生成两份，随主题切换 -->
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="./profile-3d-contrib/rainbow-night.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/rainbow-day.svg" />
-  <img src="./profile-3d-contrib/rainbow-day.svg" alt="3D contributions" width="98%" />
-</picture>
+<!-- 3D 彩虹贡献图：深色底，由 .github/workflows/profile-3d.yml 每天生成 -->
+<img src="./profile-3d-contrib/rainbow-night.svg" alt="3D contributions" width="98%" />
 
 </div>
