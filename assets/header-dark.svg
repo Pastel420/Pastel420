@@ -15,9 +15,9 @@
     </linearGradient>
 
     <linearGradient id="blendBottom" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0d1117" stop-opacity="0"/>
-      <stop offset="0.6" stop-color="#0d1117" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#0d1117" stop-opacity="1"/>
+      <stop offset="0" stop-color="#22272e" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#22272e" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#22272e" stop-opacity="1"/>
     </linearGradient>
 
     <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
